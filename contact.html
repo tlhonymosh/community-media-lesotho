@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us - Community Media Lesotho</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- ====== NAVIGATION MENU ====== -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="news.html">Community News</a></li>
+      <li><a href="events.html">Events Calendar</a></li>
+      <li><a href="videos.html">Video Interviews</a></li>
+      <li><a href="contact.html" class="active">Contact Us</a></li>
+    </ul>
+  </nav>
+
+  <!-- ====== PAGE HEADER ====== -->
+  <div class="page-header">
+    <h1>Contact Us</h1>
+    <p>Get in touch with the Community Media Lesotho team</p>
+  </div>
+
+  <!-- ====== MAIN CONTENT ====== -->
+  <div class="container">
+
+    <h2>We Want to Hear From You</h2>
+    <p>
+      Whether you have a news tip, want to submit a community event, suggest a video interview,
+      or simply have a question — we would love to hear from you. Fill in the form below
+      or use our contact details on the right.
+    </p>
+
+    <!-- Contact layout uses CSS Grid -->
+    <div class="contact-layout">
+
+      <!-- Contact Form -->
+      <div>
+        <h2>Send Us a Message</h2>
+
+        <div class="contact-form">
+
+          <label for="fullname">Full Name:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Enter your full name"
+          />
+
+          <label for="email">Email Address:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email address"
+          />
+
+          <label for="phone">Phone Number (optional):</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="e.g. +266 5800 0000"
+          />
+
+          <label for="district">Your District:</label>
+          <select id="district" name="district">
+            <option value="">-- Select your district --</option>
+            <option>Maseru</option>
+            <option>Leribe</option>
+            <option>Berea</option>
+            <option>Mafeteng</option>
+            <option>Mohale's Hoek</option>
+            <option>Quthing</option>
+            <option>Qacha's Nek</option>
+            <option>Thaba-Tseka</option>
+            <option>Butha-Buthe</option>
+            <option>Mokhotlong</option>
+          </select>
+
+          <label for="subject">What is this about?</label>
+          <select id="subject" name="subject">
+            <option value="">-- Select a topic --</option>
+            <option>News Tip</option>
+            <option>Submit an Event</option>
+            <option>Video Interview Suggestion</option>
+            <option>Photo Submission</option>
+            <option>Submit an Event Registration</option>
+            <option>General Enquiry</option>
+            <option>Other</option>
+          </select>
+
+          <label for="message">Your Message:</label>
+          <textarea
+            id="message"
+            name="message"
+            placeholder="Write your message here...">
+          </textarea>
+
+          <button type="button" onclick="sendMessage()">Send Message</button>
+
+          <!-- Success message shown after form submission -->
+          <p id="success-msg" style="display: none; color: green; margin-top: 12px; font-weight: bold;">
+            &#10003; Thank you! Your message has been sent. We will reply within 2 working days.
+          </p>
+
+        </div><!-- end .contact-form -->
+      </div>
+
+      <!-- Contact Information -->
+      <div>
+
+        <h2>Our Details</h2>
+
+        <div class="contact-info-box">
+          <h3>📍 Address</h3>
+          12 Kingsway Street<br />
+          Maseru 100<br />
+          Kingdom of Lesotho
+        </div>
+
+        <div class="contact-info-box">
+          <h3>📞 Phone &amp; WhatsApp</h3>
+          <a href="tel:+26622001234">+266 2200 1234</a><br />
+          Monday – Friday, 08:00 – 17:00
+        </div>
+
+        <div class="contact-info-box">
+          <h3>✉️ Email</h3>
+          News tips: <a href="mailto:tips@communitymedia.ls">tips@communitymedia.ls</a><br />
+          General: <a href="mailto:hello@communitymedia.ls">hello@communitymedia.ls</a><br />
+          Editor: <a href="mailto:editor@communitymedia.ls">editor@communitymedia.ls</a>
+        </div>
+
+        <div class="contact-info-box">
+          <h3>📲 Follow Us</h3>
+          <a href="#">Facebook</a><br />
+          <a href="#">YouTube</a><br />
+          <a href="#">WhatsApp Channel</a>
+        </div>
+
+        <div class="contact-info-box">
+          <h3>📸 Photo Submissions</h3>
+          Have a photo from a community event in Lesotho?
+          Send it to <a href="mailto:photos@communitymedia.ls">photos@communitymedia.ls</a>
+          with a caption and your name. We may feature it in our gallery.
+        </div>
+
+      </div>
+
+    </div><!-- end .contact-layout -->
+
+    <hr />
+
+    <!-- What we accept - UNORDERED LIST -->
+    <h2>What You Can Send Us</h2>
+    <ul>
+      <li>News tips about events happening in your community</li>
+      <li>Photos from local events with captions</li>
+      <li>Suggestions for people we should interview on video</li>
+      <li>Details of community events to add to our calendar</li>
+      <li>Letters and opinions about issues affecting your district</li>
+    </ul>
+
+    <!-- Response times - ORDERED LIST -->
+    <h2>What Happens After You Contact Us</h2>
+    <ol>
+      <li>Your message is received by our team in Maseru.</li>
+      <li>We read every message within one working day.</li>
+      <li>A team member will reply to you within 2 working days.</li>
+      <li>If your story tip is accepted, a reporter will contact you to arrange an interview.</li>
+      <li>If your event is approved, it will appear on our Events Calendar page.</li>
+    </ol>
+
+  </div><!-- end .container -->
+
+  <!-- ====== FOOTER ====== -->
+  <footer>
+    <div class="footer-inner">
+      <div>
+        <h4>Community Media Lesotho</h4>
+        <p style="color:#cce0ff; font-size:13px; line-height:1.7;">
+          Independent community journalism<br />
+          serving the people of Lesotho<br />
+          since 2020.
+        </p>
+      </div>
+      <div>
+        <h4>Pages</h4>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="news.html">Community News</a></li>
+          <li><a href="events.html">Events Calendar</a></li>
+          <li><a href="videos.html">Video Interviews</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Topics</h4>
+        <ul>
+          <li><a href="news.html">Development</a></li>
+          <li><a href="news.html">Education</a></li>
+          <li><a href="news.html">Health</a></li>
+          <li><a href="news.html">Environment</a></li>
+          <li><a href="news.html">Culture &amp; Heritage</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="contact.html">Send a Message</a></li>
+          <li><a href="contact.html">Submit a Story</a></li>
+          <li><a href="contact.html">Submit an Event</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      &copy; 2026 Community Media Lesotho. All rights reserved.
+    </div>
+  </footer>
+
+  <!-- ====== JAVASCRIPT (Form validation) ====== -->
+  <script>
+    function sendMessage() {
+      var name    = document.getElementById('fullname').value.trim();
+      var email   = document.getElementById('email').value.trim();
+      var message = document.getElementById('message').value.trim();
+
+      if (name === '' || email === '' || message === '') {
+        alert('Please fill in your name, email address, and message before sending.');
+        return;
+      }
+
+      document.getElementById('success-msg').style.display = 'block';
+    }
+  </script>
+
+</body>
+</html>
